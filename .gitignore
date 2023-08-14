@@ -10,5 +10,5 @@ www
 
 # Temp folders
 media
-# packages
+!packages/*.zip
 languages
