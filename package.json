@@ -1,0 +1,62 @@
+{
+  "name": "rename-me",
+  "version": "0.0.1",
+  "scripts": {
+    "get-joomla": "node joomla-tools.mjs -i",
+    "link": "joomla-tools -l",
+    "build": "joomla-tools -b media_source",
+    "release": "joomla-tools -r",
+    "init": "joomla-tools -i && joomla-tools -b media_source && joomla-tools -l",
+    "lint-css": "./node_modules/stylelint/bin/stylelint.js ./media_source/.",
+    "lint-js": "./node_modules/eslint/bin/eslint.js ./media_source/**/*.mjs",
+    "lint": "npm run lint-css && npm run lint-js",
+    "update:browserlist": "npx browserslist@latest --update-db"
+  },
+  "devDependencies": {
+    "@dgrammatiko/joomla-tools": "0.0.43"
+  },
+  "joomla-extensions": {
+    "components": [],
+    "libraries": [],
+    "modules": {
+      "administrator": [],
+      "site": []
+    },
+    "plugins": {
+      "actionlog": [],
+      "api-authentication": [],
+      "authentication": [],
+      "behaviour": [],
+      "captcha": [],
+      "console": [
+        {
+          "name": "responsive",
+          "version": "0.1.0"
+        }
+      ],
+      "content": [],
+      "editors": [],
+      "editors-xtd": [],
+      "extension": [],
+      "fields": [],
+      "filesystem": [],
+      "finder": [],
+      "installer": [],
+      "media-action": [],
+      "multifactorauth": [],
+      "privacy": [],
+      "quickicon": [],
+      "sampledata": [],
+      "system": [],
+      "task": [],
+      "user": [],
+      "webservices": [],
+      "workflow": []
+    },
+    "templates": {
+      "administrator": [],
+      "site": []
+    }
+  },
+  "joomlaVersion": "4.3.0"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="console" method="upgrade">
+  <name>plg_console_responsive</name>
+  <author>Dimitrios Grammatikogiannis</author>
+  <creationDate>2023-08</creationDate>
+  <copyright>(C) 2023 Dimitrios Grammatikogiannis</copyright>
+  <license>GNU General Public License version 3 or later</license>
+  <authorEmail>d.grammatiko@gmail.com</authorEmail>
+  <authorUrl>https://dgrammatiko.dev</authorUrl>
+  <version>{{version}}</version>
+  <description>PLG_CONSOLE_RESPONSIVE_XML_DESCRIPTION</description>
+  <namespace path="src">Dgrammatiko\Plugin\Console\Responsive</namespace>
+  <files>
+    <folder plugin="responsive">services</folder>
+    <folder>src</folder>
+    <folder>language</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+      </fieldset>
+    </fields>
+  </config>
+</extension>
