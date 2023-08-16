@@ -4,6 +4,7 @@ A simple Console plugin that could run the source set thumbnails generation on t
 
 ### How to...
 
+- Download the plugin from: [the packages folder](https://github.com/ttc-freebies/responsive-cli/tree/main/packages)
 - Install the plugin and make sure the Responsive plugin is already installed and enabled (configured).
 - Enable the plugin from the System->Plugins, using the filters to select the type: Console.
 - Using SSH or a cron job run `php www/cli/joomla.php responsive:build`, assuming that your public folder is named `www` (if not adjust the command to reflect the correct path).
